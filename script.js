@@ -90,7 +90,6 @@ const sejarahSlides = [
 ];
 
 const wrapper = document.getElementById("sejarah-wrapper");
-
 sejarahSlides.forEach((slide) => {
   const slideEl = document.createElement("div");
   slideEl.className = "swiper-slide";
@@ -101,6 +100,25 @@ sejarahSlides.forEach((slide) => {
     </div>
   `;
   wrapper.appendChild(slideEl);
+});
+
+// Langkah 2: Baru inisialisasi Swiper
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
 });
 
 function toggleMenu() {

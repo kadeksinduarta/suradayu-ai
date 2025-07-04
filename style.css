@@ -6,6 +6,10 @@
   /* border: 1px solid black; */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main-page {
   font-family: "Segoe UI", sans-serif;
   /* padding: 20px; */
@@ -126,7 +130,7 @@ nav .nav-link li a:hover {
 
 .sejarah h2 {
   font-size: 2rem;
-  color: #2c3e50;
+  color: #5e3d2c;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -157,12 +161,14 @@ nav .nav-link li a:hover {
   color: #444;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+div.swiper-button-prev,
+div.swiper-button-next {
   top: 50%;
   transform: translateY(0%);
   color: #181818;
   z-index: 10;
+  width: 10px;
+  height: 10px;
 }
 
 /* Animasi blink swipe hint */
@@ -447,11 +453,13 @@ nav .nav-link li a:hover {
     display: none;
     width: 100%;
     position: absolute;
-    top: 65px;
+    top: 50px;
     left: 0;
+    /* height: 100; */
     background-color: #00695c;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+    /* padding: 10px 0; */
   }
 
   .nav-link.open {
@@ -460,7 +468,7 @@ nav .nav-link li a:hover {
 
   .nav-link ul {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
 
   .nav-link a {
@@ -469,50 +477,16 @@ nav .nav-link li a:hover {
   .sejarah-carousel {
     padding: 20px 16px;
     margin: 40px auto;
-    width: 100%;
+    max-width: 100%;
+    border-radius: 2px;
+  }
+
+  .sejarah-carousel p {
+    font-size: 16px;
   }
 
   .sejarah-carousel h2 {
     font-size: 22px;
-  }
-
-  .sejarah-carousel h2::after {
-    font-size: 13px;
-  }
-
-  .sejarah-carousel .slide.with-image {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-    padding: 16px;
-    width: 100%;
-  }
-
-  .slide-image {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    object-fit: cover;
-  }
-
-  .sejarah-carousel .slide.with-image p {
-    width: 100%;
-    font-size: 15px;
-    line-height: 1.6;
-    text-align: justify;
-  }
-
-  .sejarah-carousel .swiper {
-    padding: 20px;
-    flex-direction: column;
-  }
-
-  .sejarah-carousel .swiper p {
-    font-size: 16px;
-    padding: 0 8px;
-  }
-  .swiper-slide {
-    flex: 0 0 80%;
   }
 
   .slide-content img {

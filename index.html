@@ -6,6 +6,7 @@
     <title>Pura Suradayu</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <div class="main-page">
@@ -17,17 +18,17 @@
         <div class="hamburger" onclick="toggleMenu()">☰</div>
         <div class="nav-link" id="nav-links">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sejarah</a></li>
-            <li><a href="#">Melukat</a></li>
-            <li><a href="#">Fasilitas</a></li>
-            <li><a href="#">Lokasi</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sejarah">Sejarah</a></li>
+            <li><a href="#melukat">Melukat</a></li>
+            <li><a href="#fasilitas">Fasilitas</a></li>
+            <li><a href="#lokasi">Lokasi</a></li>
           </ul>
         </div>
       </nav>
 
       <!-- Header -->
-      <div class="halaman-utama">
+      <div class="halaman-utama" id="home">
         <div class="halaman-overlay">
           <h1>Pura Suradayu</h1>
           <p>Tempat suci untuk melukat dan pembersihan diri spiritual di Bali.</p>
@@ -35,7 +36,7 @@
       </div>
 
       <!-- Sejarah -->
-      <section class="sejarah">
+      <section class="sejarah" id="sejarah">
         <div class="sejarah-carousel">
           <h2>Sejarah Pura Suradayu</h2>
           <div class="swiper mySwiper">
@@ -45,12 +46,15 @@
 
             <!-- opsional: navigasi dan pagination -->
           </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- navigasi -->
           <div class="swiper-pagination"></div>
         </div>
       </section>
 
       <!-- Melukat Section -->
-      <section class="melukat-section">
+      <section class="melukat-section" id="melukat">
         <h2>
           🧘‍♂️ <br />
           Melukat di Pura Suradayu
@@ -59,22 +63,22 @@
           <div class="melukat-card">
             <i class="fas fa-clock melukat-icon"></i>
             <h3>Waktu Melukat</h3>
-            <p>Melukat dapat dilakukan setiap hari, namun waktu terbaik adalah pagi hari (sebelum pukul 10.00)...</p>
+            <p>Melukat dapat dilakukan setiap hari, namun waktu terbaik adalah pagi hari, siang hari, dan sore hari</p>
           </div>
           <div class="melukat-card">
             <i class="fas fa-calendar-alt melukat-icon"></i>
             <h3>Hari Baik Pelaksanaan</h3>
-            <p>Hari baik untuk melukat adalah saat Purnama, Tilem, Kajeng Kliwon, atau saran pemangku...</p>
+            <p>Hari baik untuk melukat adalah saat kapan saja yang penting tidak halangan</p>
           </div>
           <div class="melukat-card">
             <i class="fas fa-bullseye melukat-icon"></i>
             <h3>Tujuan Melukat</h3>
-            <p>Melukat bertujuan menyucikan diri dari energi negatif, menenangkan pikiran...</p>
+            <p>Melukat bertujuan menyucikan diri dari energi negatif, menenangkan pikiran</p>
           </div>
           <div class="melukat-card">
             <i class="fas fa-leaf melukat-icon"></i>
             <h3>Sarana</h3>
-            <p>Membawa canang sari, pejati, dan pakaian adat Bali seperti kamen, selendang, dan udeng.</p>
+            <p>Membawa canang sari, sarana seadanya, dan pakaian adat Bali seperti kamen, selendang, dan udeng.</p>
           </div>
           <div class="melukat-card">
             <i class="fas fa-money-bill-wave melukat-icon"></i>
@@ -85,9 +89,9 @@
       </section>
 
       <!-- Fasilitas -->
-      <section class="fasilitas">
+      <section class="fasilitas" id="fasilitas">
         <h2>Fasilitas di Pura Suradayu</h2>
-        <p class="intro">Berikut beberapa fasilitas yang tersedia...</p>
+        <p class="intro">Berikut beberapa fasilitas yang tersedia</p>
         <div class="fasilitas-grid">
           <div class="fasilitas-item">
             <i class="fas fa-parking icon"></i>
@@ -113,12 +117,12 @@
       </section>
 
       <!-- Lokasi -->
-      <section class="lokasi">
+      <section class="lokasi" id="lokasi">
         <h2>
           📍 <br />
           Lokasi Pura Suradayu
         </h2>
-        <p class="lokasi-desc">Pura Suradayu terletak di Desa Manukaya, Gianyar, Bali...</p>
+        <p class="lokasi-desc">Pura Suradayu terletak di Desa Manukaya, Gianyar, Bali</p>
         <div class="map-container">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.920574422361!2d115.3044590747863!3d-8.40946169162919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2193c0234a5a1%3A0xaa3cce60a6aed78b!2sPura%20Suradayu!5e0!3m2!1sen!2sid!4v1751520709933!5m2!1sen!2sid"
